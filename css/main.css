@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+
+.main h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 300;
+    font-size: 35px;
+    margin: 120px;
+}
+
+.full-screen {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15px;
+}
+.full-screen_body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.full-screen_title_AD-MARI {
+    font-size: 50px;
+    letter-spacing: 25px;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+}
+.full-screen_title_AR-RIF_Ziro_Ziro {
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+}
+.full-screen_link a{
+
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding: 10px 30px 10px 30px;
+
+}
+.full-screen_link a:hover{
+    color: rgb(152, 166, 180);
+}
+
+.full-screen_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.picture_service img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
