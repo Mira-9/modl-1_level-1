@@ -17,7 +17,7 @@ nav{
     flex-wrap: wrap;
     position: fixed;
     z-index: 1;
-    padding: 0px 135px 0px 139px;
+    padding: 0 135px 0 139px;
 }
 nav:hover{
     background-color: rgb(152, 166, 180);
@@ -69,8 +69,7 @@ header{
 }
 
 .menu li{
-    margin: 0 17px;
-    margin-top: 12px;
+    margin: 12px 17px;
 }
  h2,h3{ /* ЗАГОЛОВОК */
     width: 60%;
@@ -116,7 +115,7 @@ h4{
     list-style-type: none;
 }
 .registration ul li a{
-    padding: 0px 6px; 
+    padding: 0 6px;
 }
 /* flex: 0 0 100%; /* Слайды занимают всю ширину */
 /* transition: transform 0.3s ease-in-out; Плавная анимация переходов */
