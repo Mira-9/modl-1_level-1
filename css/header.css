@@ -16,19 +16,18 @@ nav{
     justify-content: center;
     flex-wrap: wrap;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     padding: 0 135px 0 139px;
 }
 nav:hover{
     background-color: rgb(152, 166, 180);
     transition: 0.5s;
     color: black;
+    height: 80px;
 }
 nav ul{
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
-    /* list-style-type: none; */
 }
 nav ul li{
     position: relative;
@@ -50,20 +49,22 @@ header{
     float: left;
 }
 .flex ul li a{
-    margin-top: 10px;
+    margin: 25px 0 0 0;
     font-size: 20px;
     color: white;
     list-style-type: none;
     display: block;
 }
-.logo h1{ /* ЛОГОТИП */
+/* ЛОГОТИП */
+.logo h1{
     display: flex;
     color: white;
     font-weight: 300;
     font-size: 35px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
-.menu ul{ /*ГОРИЗОНТАЛЬНОЕ МЕНЮ*/
+/*ГОРИЗОНТАЛЬНОЕ МЕНЮ*/
+.menu ul{
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
 }
@@ -71,7 +72,8 @@ header{
 .menu li{
     margin: 12px 17px;
 }
- h2,h3{ /* ЗАГОЛОВОК */
+/* ЗАГОЛОВОК */
+ h2,h3{
     width: 60%;
     top: 20%;
     left: 20%;
@@ -91,6 +93,7 @@ h4{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
+/*МЕНЮ НИЖЕ ЗАГОЛОВКА*/
 .header_lower {
     position: relative;
     display: flex;
@@ -111,11 +114,42 @@ h4{
 .header_lower a:hover{
     color: rgb(152, 166, 180);
 }
-.registration li { /*КНОПКА РЕГЕСТРАЦИИ И МЕСТО НАШЕГО РАСПОЛОЖЕНИЯ*/
+/*КНОПКА РЕГЕСТРАЦИИ И МЕСТО НАШЕГО РАСПОЛОЖЕНИЯ*/
+.registration li {
     list-style-type: none;
 }
 .registration ul li a{
     padding: 0 6px;
+    margin: 10px 0 0 0;
 }
-/* flex: 0 0 100%; /* Слайды занимают всю ширину */
-/* transition: transform 0.3s ease-in-out; Плавная анимация переходов */
+@media screen and (max-width: 1200px)
+{ nav {
+    height: 300px;
+    top: -30px;
+    /*width: auto;*/
+    }
+}
+
+@media screen and (max-width: 900px)
+{ header {
+    height: 500px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{ header{
+    height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{ header{
+    height: 500px;
+    }
+}
+
+@media screen and (max-width: 300px)
+{ header{
+    height: 200px;
+    }
+}
