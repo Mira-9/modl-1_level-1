@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+h1,h3{
+    color: #eee2e2;
+}
 a{
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     text-transform: uppercase;
 }
 a:hover{
-    color: rgba(78, 72, 88, 0.933);
+    color: rgba(226, 217, 236, 0.4);
 }
 
 body{
@@ -16,7 +18,7 @@ body{
     height: 100%;
     position: relative;
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(rgba(30, 16, 224, 0.879), rgba(132, 79, 173, 0.66)), url('https://ru.louisvuitton.com/images/is/image/HP_Services_Push_Art_Of_Gifting_DI3.jpg?wid=2400');
+    background-image: linear-gradient(rgba(30, 16, 224, 0.879), rgba(132, 79, 173, 0.66));
     background-repeat: no-repeat;
 }
 
@@ -25,78 +27,114 @@ main{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0px 0px 0px 120px;
-    /* justify-content: center; */
+    padding: 0 0 0 530px;
 }
 
 .form_se{
-    background: white;
     width: 400px;
     padding: 5px;
     border-radius: 25px;
-    float: right;
+    float: left;
+    background-color: rgba(31, 2, 63, 0.4);
+
 }
 form{
     width: 80%;
-    margin: auto; 
+    margin: auto;
+
 }
 input{
     width: 90%;
     height: 35px;
-    padding-left: 15px;
-    padding-right: 10px;
+    padding: 0 10px 0 15px;
     border: none;
     border-radius: 20px;
     margin-bottom: 20px;
-    background: rgba(124, 124, 124, 0.512);
-    color: black;
+    background: rgb(100, 87, 87, 0.61);
+    color: #ffffff;
     transition: 1s;
+
 }
 .btn{
     width: 100%;
 }
 
 button{
+    border: none;
     padding: 10px 45px 10px 45px;
-    background-color: rgba(25, 17, 11, 0.6);
+    background-color: rgba(100, 87, 87, 0.61);
     border-radius: 10px;
     font-size: 15px;
-    color: white;
+    color: #a8a2a2;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+    -webkit-transition: 0.7s;
 }
 button:hover{
-    color: rgb(152, 166, 180);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
-/* .registration_information {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 0px 0px 250px;
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+    h1,h3{
+
+    }
+    main{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 0 0 330px;
+    }
+    .form_se {
+        width: 350px;
+        padding: 5px;
+        border-radius: 25px;
+        float: left;
+        background-color: rgba(31, 2, 63, 0.4);
+    }
 }
-.registration_information_body {
-    position: relative;
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-transform: uppercase;
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    h1,h3{
+
+    }
+    main{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 0 0 330px;
+    }
+    .form_se {
+        width: 350px;
+        padding: 5px;
+        border-radius: 25px;
+        float: left;
+        background-color: rgba(31, 2, 63, 0.4);
+    }
 }
-.registration_information_title {
-    font-size: 15px;
-    letter-spacing: 25px;
-    font-weight: 700;
-    margin: 0px 0px 20px 0px;
+@media screen and (min-width: 768px) and (max-width: 991px){
+    h1,h3{
+
+    }
+    main{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 0 0 300px;
+    }
+    .form_se {
+        width: 350px;
+        padding: 5px;
+        border-radius: 25px;
+        float: left;
+        background-color: rgba(31, 2, 63, 0.4);
+    }
 }
-.registration_information_text {
-    color: white;
-    font-size: 12px;
-    padding: 10px 30px 10px 30px;
-    position: relative;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-} */
+@media screen and (max-width: 480px){
+
+}
+@media screen and (max-width: 320px){
+
+}

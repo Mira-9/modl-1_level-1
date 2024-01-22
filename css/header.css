@@ -17,13 +17,13 @@ nav{
     flex-wrap: wrap;
     position: fixed;
     z-index: 1000;
-    padding: 0 135px 0 139px;
+    width: 100%;
+    -webkit-transition: 0.7s; /*плавный возврат после hover*/
 }
 nav:hover{
     background-color: rgb(152, 166, 180);
     transition: 0.5s;
     color: black;
-    height: 80px;
 }
 nav ul{
     display: flex;
@@ -31,6 +31,7 @@ nav ul{
 }
 nav ul li{
     position: relative;
+    margin: 0 5px 0 5px;
 }
 nav ul li:hover a{
     color: black;
@@ -54,14 +55,6 @@ header{
     color: white;
     list-style-type: none;
     display: block;
-}
-/* ЛОГОТИП */
-.logo h1{
-    display: flex;
-    color: white;
-    font-weight: 300;
-    font-size: 35px;
-    margin-top: 5px;
 }
 /*ГОРИЗОНТАЛЬНОЕ МЕНЮ*/
 .menu ul{
@@ -100,7 +93,9 @@ h4{
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(15px);
-    margin: 500px 680px;
+    top: 500px;
+    margin: 0 660px 0 660px;
+    right: 1px;
     border-radius: 30px;
     background-color: rgba(25,17,11,.2);
     font-family: 'Montserrat', sans-serif;
@@ -119,37 +114,259 @@ h4{
     list-style-type: none;
 }
 .registration ul li a{
-    padding: 0 6px;
+    padding: 0 0 0 6px;
     margin: 10px 0 0 0;
 }
-@media screen and (max-width: 1200px)
-{ nav {
-    height: 300px;
-    top: -30px;
-    /*width: auto;*/
+
+/*МЕДИА-ЗАПРОСЫ*/
+@media screen and (max-width: 1440px){
+    header .flex {
+        top: -10px;
+        margin: 5px 10px 10px 0;
+        width: 100%;
+    }
+    header nav ul{
+        padding-left: 0;
+    }
+    header .flex ul li {
+        padding: 0 0 0 0;
+    }
+    header .flex ul li a {
+        font-size: 22px;
+    }
+    .header_lower {
+        top: 490px;
+        margin: 0 610px 610px;
+    }
+    .header_lower a{
+        font-size: 18px;
+        padding: 10px 10px 10px 10px;
+        letter-spacing: 2px;
+    }
+    .menu ul li{
+        padding: 0 20px 0 20px;
     }
 }
-
-@media screen and (max-width: 900px)
-{ header {
-    height: 500px;
+@media screen and (min-width: 1200px) and (max-width: 1439px)/* DESKTOP */
+{
+    header .flex {
+        top: -10px;
+        margin: 5px 10px 10px 0;
+        width: 100%;
+    }
+    header nav ul{
+        padding-left: 0;
+    }
+    header .flex ul li {
+        padding: 0 0 0 0;
+    }
+    header .flex ul li a {
+        font-size: 18px;
+    }
+    .header_lower {
+        top: 490px;
+        margin: 0 650px 650px;
+    }
+    .header_lower a{
+        font-size: 16px;
+        padding: 10px 10px 10px 10px;
+        letter-spacing: 2px;
+    }
+    .menu ul li{
+        padding: 0 20px 0 20px;
     }
 }
-
-@media screen and (max-width: 700px)
-{ header{
-    height: 400px;
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    header .flex {
+        top: -10px;
+        padding: 0 30px 0 30px;
+        width: 100%;
+    }
+    header nav ul {
+        padding-left: 0;
+    }
+    header .flex ul li a {
+        font-size: 18px;
+    }
+    .header_lower {
+        margin: 0 410px 0 410px;
+    }
+    .header_lower a {
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        letter-spacing: 2px;
     }
 }
-
-@media screen and (max-width: 500px)
-{ header{
-    height: 500px;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    header .flex {
+        top: -3px;
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
+    header nav ul {
+        padding-left: 0;
+    }
+    .menu ul li {
+        margin: 0 10px 0 10px;
+        padding: 0 2px 0 2px;
+    }
+    header .flex ul li a {
+        font-size: 14px;
+    }
+    .header_lower {
+        margin: 0 285px 0 285px;
+        padding: 5px 10px 5px 10px;
+    }
+    .header_lower a {
+        font-size: 12px;
+        padding: 5px;
+        letter-spacing: 2px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+    header h3 {
+        font-size: 20px;
     }
 }
-
-@media screen and (max-width: 300px)
-{ header{
-    height: 200px;
+@media screen and (max-width: 480px) /* MOBILE */ {
+    header{
+        height: 600px;
     }
+    header .flex {
+        top: -3px;
+        padding: 0 10px 0 10px;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .bi-person-add, .bi-bi-geo-alt {
+        padding: 2px 2px 2px 2px;
+    }
+    .menu ul li {
+        margin: 0 10px 0 0;
+    }
+    header nav ul {
+        margin: 5px;
+        padding: 0;
+    }
+    header .flex ul li a {
+        font-size: 10px;
+        margin: 10px 0 0 0;
+    }
+    .header_lower {
+        top: 340px;
+        margin: 0 130px 0 130px;
+    }
+    .header_lower a {
+        font-size: 12px;
+        padding: 10px 20px 10px 20px;
+        letter-spacing: 1px;
+    }
+    header h2 {
+        font-size: 15px;
+        top: 170px;
+    }
+    header h3 {
+        font-size: 15px;
+        top: 170px;
+    }
+    header h4 {
+        font-size: 20px;
+        top: 340px;
+    }
+}
+/*@media screen and (max-width: 320px) {
+/*    header {
+/*        height: 600px;
+/*    }
+/*    header .flex {
+/*        top: -3px;
+/*        padding: 0 10px 0 10px;
+/*        width: 100%;
+/*        flex-wrap: nowrap;
+/*    }
+/*    .bi-person-add, .bi-bi-geo-alt {
+/*        padding: 2px 2px 2px 2px;
+/*    }
+/*    .menu ul li {
+/*        margin: 0 10px 0 0;
+/*    }
+/*    header nav ul {
+/*        margin: 5px;
+/*        padding: 0;
+/*    }
+/*    header .flex ul li a {
+/*        font-size: 10px;
+/*        margin: 10px 0 0 0;
+/*    }
+/*    .header_lower {
+/*        top: 340px;
+/*        margin: 0 110px 0 110px;
+/*    }
+/*    .header_lower a {
+/*        font-size: 12px;
+/*        padding: 10px 20px 10px 20px;
+/*    }
+/*    header h2 {
+/*        font-size: 15px;
+/*        top: 170px;
+/*    }
+/*    header h3 {
+/*        font-size: 15px;
+/*        top: 170px;
+/*    }
+/*    header h4 {
+/*        font-size: 20px;
+/*        top: 340px;
+/*    }
+/*}*/
+@media screen and (max-width: 320px) {
+    header{
+        height: 500px;
+    }
+    header .flex {
+        top: -3px;
+        padding: 0;
+        width: 100%;
+    }
+    .bi-person-add, .bi-bi-geo-alt {
+        padding: 6px 6px 6px 6px;
+    }
+    .menu ul li {
+        margin: 0 10px 0 0;
+    }
+    header nav ul {
+        margin: 5px;
+        padding: 0;
+    }
+    header .flex ul li a {
+        font-size: 10px;
+        margin: 10px 0 0 0;
+    }
+    .header_lower {
+        top: 260px;
+        margin: 0 105px 0 105px;
+    }
+    .header_lower a {
+        font-size: 10px;
+        padding: 5px 10px 5px 10px;
+        letter-spacing: 1px;
+    }
+    header h2 {
+        font-size: 12px;
+        top: 170px;
+    }
+    header h3 {
+        font-size: 12px;
+        top: 170px;
+    }
+    header h4 {
+        font-size: 12px;
+        top: 260px;
+    }
+    /*.full-screen_link a {*/
+    /*    font-size: 12px; !important;*/
+    /*    letter-spacing: 5px; !important;*/
+    /*}*/
+
 }
